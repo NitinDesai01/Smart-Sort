@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Waste_segregation|Register</title>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <style>
+      		.error_mail{
+      		color:red;
+      		}
+      .tuber{
+               width:80%;
+               font-size:35px;
+               color:#042f66;
+               padding:15px 0px;
+               text-align:center;
+               font-weight:600;
+               font-family:Diplomata SC;
+      <!--         background-color:#fde6bc;-->
+               position:sticky;
+               letter-spacing: 3px;
+               word-spacing:6px;
+               text-shadow: 3px 3px 8px red;
+               border:5px solid black;
+               margin: auto;
+               margin-top: 20px;
+               border-radius: 10px;
+                 }
+                 .body{
+      overflow: hidden;
+        position: relative;
+      }
+      .img{
+       opacity: 0.6;
+       position: absolute;
+       width: 100%;
+       height:100%;
+       background-image: linear-gradient(to right, #DECBA4, #3E5151);
+      }
+      .last{
+      position:relative;
+      }
+
+      .text-muted{
+      color:#042f66;
+      }
+
+      small{
+      color:red;
+      }
+
+      .card{
+      border: 1px solid blue;
+      border-radius: 5px;
+      margin-left: 25%;
+      margin-bottom: 20px;
+      }
+
+      .card{background:transparent;}
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <img class="img" />
+      <div class="last">
+        <h1 class="tuber">WASTE SEGREGATION</h1>
+
+        <div class="container">
+          <h2 class="text-center">
+            <a href="http://bootstrap-ecommerce.com/"> </a>
+          </h2>
+          <hr />
+
+          <div class="row justify-content-right">
+            <div class="col-md-9">
+              <div class="card">
+                <header class="card-header">
+                  <a href="/" class="float-right btn btn-outline-primary mt-1"
+                    >Log in</a
+                  >
+                  <h4 class="card-title mt-2">Sign up</h4>
+                </header>
+                <article class="card-body">
+                  <form
+                    method="post"
+                    style="
+                      border: 1px solid blue;
+                      border-radius: 5px;
+                      padding: 5px;
+                    "
+                  >
+                    <div class="form-row">
+                      <div class="col form-group">
+                        <label>First name </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="name"
+                          placeholder="Enter your name"
+                          required
+                        />
+                      </div>
+                      <!-- form-group end.// -->
+                      <div class="col form-group">
+                        <label>Last name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="Last name"
+                          placeholder="Enter your last name"
+                          required
+                        />
+                      </div>
+                      <!-- form-group end.// -->
+                    </div>
+                    <!-- form-row end.// -->
+                    <div class="form-group">
+                      <label>Email address</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="Email"
+                        placeholder=""
+                        required
+                      />
+                      <small class="form-text"
+                        >We'll never share your email with anyone else.</small
+                      >
+                      <h5 class="error_mail">{{msg}}</h5>
+                    </div>
+                    <!-- form-group end.// -->
+                    <div class="form-group">
+                      <label class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          value="option1"
+                        />
+                        <span class="form-check-label"> Male </span>
+                      </label>
+                      <label class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          value="option2"
+                        />
+                        <span class="form-check-label"> Female</span>
+                      </label>
+                    </div>
+                    <!-- form-group end.// -->
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>City</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <!-- form-group end.// -->
+                      <div class="form-group col-md-6">
+                        <label>Country</label>
+                        <select id="inputState" class="form-control">
+                          <option>Choose...</option>
+                          <option>Uzbekistan</option>
+                          <option>Russia</option>
+                          <option selected="">United States</option>
+                          <option>India</option>
+                          <option>Afganistan</option>
+                        </select>
+                      </div>
+                      <!-- form-group end.// -->
+                    </div>
+                    <!-- form-row.// -->
+                    <div class="form-group">
+                      <label>Create password</label>
+                      <input
+                        class="form-control"
+                        name="Password"
+                        type="password"
+                        required
+                      />
+                    </div>
+                    <!-- form-group end.// -->
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-block">
+                        Register
+                      </button>
+                    </div>
+                    <!-- form-group// -->
+                    <small class="form-text"
+                      >By clicking the 'Sign Up' button, you confirm that you
+                      accept our <br />
+                      Terms of use and Privacy Policy.</small
+                    >
+                  </form>
+                </article>
+                <!-- card-body end .// -->
+                <div class="border-top card-body text-center">
+                  Have an account?
+                  <a href="/" style="color: #042f66"><b>Log In</b></a>
+                </div>
+              </div>
+              <!-- card.// -->
+            </div>
+            <!-- col.//-->
+          </div>
+          <!-- row.//-->
+        </div>
+      </div>
+    </div>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>

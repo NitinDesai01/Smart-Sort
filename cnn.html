@@ -1,0 +1,80 @@
+{% extends 'base.html' %} {% block content %}
+
+<style>
+  img {
+    padding: 40px;
+    width: 90%;
+    margin: 2%;
+    background-color: #aff;
+  }
+
+  .img5, .img6 {
+    display: none;
+  }
+
+  .second-h2 {
+    display: none;
+  }
+
+  body {
+    background-repeat: repeat;
+  }
+</style>
+
+<center>
+  <div style="margin: -100px 0px 0px 200px">
+    <h2 class="first-h2" id="first_h2" style="color: #042f66">
+      Accuracy and Loss Plot Graph for CNN Model
+    </h2>
+    <h2 class="second-h2" id="second_h2">Result Analysis for CNN Model</h2>
+    <span class="Result_Analysis_btn">
+      <input type="button" onclick="show1()" value="CNN Plot graphs" />
+      <input type="button" onclick="show()" value="Result Analysis" /> </span
+    ><br />
+    <img class="img1" id="image2" src="/static/graphs/cnn/ac1.png" alt="ac1" />
+    <img class="img2" id="image1" src="/static/graphs/cnn/ac2.png" alt="ac2" />
+    <img class="img3" id="image3" src="/static/graphs/cnn/ls1.png" alt="ls1" />
+    <img class="img4" id="image4" src="/static/graphs/cnn/ls2.png" alt="ls2" />
+    
+    
+      
+
+      <img class="img5" id="image5" src="/static/graphs/cnn/cm.png" alt="cm" />
+    <img class="img6" id="image6" src="/static/graphs/cnn/cr.png" alt="cr" />
+    </div>
+  </div>
+</center>
+<br /><br />
+<script>
+  var img1 = document.getElementById("image1");
+  var img2 = document.getElementById("image2");
+  var img3 = document.getElementById("image3");
+  var img4 = document.getElementById("image4");
+  var img5 = document.getElementById("image5");
+  var img6 = document.getElementById("image6");
+  var h1 = document.getElementById("first_h2");
+  var h2 = document.getElementById("second_h2");
+
+  function show() {
+    img1.style.display = "none";
+    img2.style.display = "none";
+    img3.style.display = "none";
+    img4.style.display = "none";
+    img5.style.display = "block";
+    img6.style.display = "block";
+    h1.style.display = "none";
+    h2.style.display = "block";
+  }
+  function show1() {
+    img1.style.display = "inline";
+    img2.style.display = "inline";
+    img3.style.display = "inline";
+    img4.style.display = "inline";
+    img5.style.display = "none";
+    img6.style.display = "none";
+    h1.style.display = "block";
+    h2.style.display = "none";
+  }
+</script>
+
+{% endblock %}

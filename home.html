@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="margin-top:-100px;">
+
+
+     <center>
+     <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+      <label class="control-label col-sm-5" for="pwd" style="color:#042f66" ><strong>Upload Your Image :</strong></label>
+      <div class="col-lg-6">
+        <input type="file" class="form-control" placeholder="Hours Studied"  required name="my_image" id="pwd">
+        {{ msg }}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-6 col-sm-6">
+        <button style="width:70px;height:30px;" type="submit" class=" btn-success">Submit</button>
+      </div>
+    </div>
+  </form><br>
+
+	{% if prediction %}
+
+         <div class="" style="display:flex; justify-content:center;align-items:center">
+             <div class="">
+                  <img src="{{ img_path }}"  >
+             </div>
+         </div><br>
+
+         <div class="row" >
+             <center>
+             <div class="col-lg-4" style="background:#abdbe3;">
+                   <h5 style="margin-left:-90px;"> Machine Prediction </h5><br>
+                   <h2 class="result"><b> {{ prediction }} </b></h2><br>
+                 <h2 class="result"><b> {{ acc }} </b></h2><br>
+                 </div>
+               </center>
+         </div><br>
+
+	{% endif %}
+
+
+     </center>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
